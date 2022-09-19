@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    border: 1px solid blue;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    height: 500px;
+    background-color: green;
+}
+
+.card, .card-back {
+    background-color: grey;
+    border: 1px solid black;
+    width: 98px;
+    height: 98px;
+    cursor: pointer;
+}
+
+.card {
+    display: none;
+}

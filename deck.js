@@ -18,8 +18,14 @@ function makeDeck() {
         cardsList.push(colors[c], colors[c]);
         }
     cardsList.push('black');
-    return shuffle(cardsList)
+    shuffle(cardsList)
+    cardDict = {}
+    for (c in cardsList) {
+        cardDict['card-' + c] = cardsList[c]
+    }
+    return cardDict
 }
 
-
+// module.exports.celsiusToFahrenheit = celsiusToFahrenheit;
+module.exports.makeDeck = makeDeck;
 // console.log(makeDeck())
